@@ -1,0 +1,13 @@
+#!/bin/bash
+export TF_VAR_tenancy_ocid=ocid1.tenancy.oc1..aaaaaaaaubrkzed3mzqxtsxx4qnfgmcmoh5mm7r6r33e3joefrayjnrmf7oa 
+export TF_VAR_user_ocid=ocid1.user.oc1..aaaaaaaajpxtuonmp5yhybhq46bstme54qeaewizegjux4lq7of65initpgq
+export TF_VAR_compartment_ocid=ocid1.compartment.oc1..aaaaaaaazw3pvebo57p5642sujm4fueupvv4ho53gcsowaf2lple4fsg5o4a
+export TF_VAR_fingerprint=33:93:45:e5:ca:82:df:ff:ec:88:97:de:44:89:41:5c
+export TF_VAR_private_key_path=~/.oci/oci_api_key.pem
+export TF_VAR_region=us-phoenix-1
+#VM SHAPE
+export TF_VAR_InstanceShape=VM.Standard2.1
+export TF_VAR_InstanceImageOCID=ocid1.image.oc1.phx.aaaaaaaadjnj3da72bztpxinmqpih62c2woscbp6l3wjn36by2cvmdhjub6a
+#SSH Keys
+export TF_VAR_ssh_public_key=$(cat ~/.oci/ssh_keys/key.pub)
+export TF_VAR_ssh_private_key=$(cat ~/.oci/ssh_keys/key)
